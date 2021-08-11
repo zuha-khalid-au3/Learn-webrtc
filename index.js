@@ -11,7 +11,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-//app.get()
+app.get("/dev-route", (req, res) => {
+  res.send("gg");
+});
 server.listen(PORT, () => {
   console.log(`listening on ${PORT}`);
 });
